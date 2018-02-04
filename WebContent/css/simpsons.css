@@ -1,0 +1,43 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 22px;
+}
+
+.jumbotron{
+    padding: 2rem 1rem;
+    background-color: #CBD2D6;
+}
+
+.container:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  
+  display: block;
+  background-image: linear-gradient(to right, black 0%, white 100%), url('/cs3220stu54/images/assignment6/background.jpg');
+  background-blend-mode: screen;
+  width: 100%;
+  height: 100%;
+  
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
+
+.container {
+	padding-top: 22px;
+	padding-bottom: 1px;
+}
+
+.well {
+	background-color: #E0E3E5;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- meta tags -->
+        <meta charset="utf-8">
+        <meta name="description" content="Assignments.html - Links to the working demo of Assignment 2 - Request Summary.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- Bootstrap Sandstone Stylesheet (minified version) : bootstrapSandstone.css -->
+        <link rel="stylesheet" href="/cs3220stu54/css/bootstrapSandstone.css">
+        
+        <!-- Custom Stylesheet : customization.css -->
+        <link rel="stylesheet" href="/cs3220stu54/css/customization.css">
+        
+        <!-- Title of web page -->
+        <title>Request Summary-Assignments.html</title>
+    </head>
+    
+    <body>
+        <!-- Header Section -->
+        <div class="jumbotron headersection">
+            <div class="container">
+                <h1 class="headerh1">Request Summary<small class="headersmall"> Lab Assignment 2</small></h1>
+            </div>
+        </div>
+        
+        <!-- Demo links Section -->
+        <div class="container">
+            
+            <div class="hide">
+                <form id="form-post-no-params" method="post" action="http://cs3.calstatela.edu:8080/cs3220stu54/RequestSummary" target="_blank">
+                    <button type="submit"></button>
+                </form>
+                
+                <form id="form-post-params" method="post" action="http://cs3.calstatela.edu:8080/cs3220stu54/RequestSummary" target="_blank">
+                    <input type="text" name="name" value="Mohit Sharma" />
+                    <input type="email" name="email" value="msharma2@calstatela.edu" />
+                    <select multiple name="interests">
+                        <option value="Hiking" selected="selected"></option>
+                        <option value="Programming" selected="selected"></option>
+                        <option value="Reading" selected="selected"></option>
+                        <option value="Traveling" selected="selected"></option>
+                    </select>
+                    <select multiple name="availability">
+                        <option value="Saturday" selected="selected"></option>
+                        <option value="Sunday" selected="selected"></option>
+                    </select>
+                    <button type="submit"></button>
+                </form>
+            </div>
+            
+            <p>This is Assignments.html page uploaded on <strong>CSNS</strong>.<p>
+            <p>To see the working demo of <i>Lab Assignment 2 - Request Summary</i>, please 
+            <a href="http://cs3.calstatela.edu:8080/cs3220stu54/RequestSummary" target="_blank">click here</a>.</p>
+            
+            <!-- GET and POST request links -->
+            <div class="row">
+                <!-- HTTP Request Types without parameters. -->
+                <div class="col-sm-6">
+                    <div class="well" style="background-color:lavender;">
+                        <h3>Without Parameters.</h3>
+                        <ul>
+                            <li><a href="http://cs3.calstatela.edu:8080/cs3220stu54/RequestSummary" target="_blank">GET</a></li>
+                            <li><a onclick="document.getElementById('form-post-no-params').submit();">POST</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- HTTP Request Types with parameters. -->
+                <div class="col-sm-6">
+                    <div class="well" style="background-color:lavender;">
+                        <h3>With Parameters.</h3>
+                        <ul>
+                            <li><a href="http://cs3.calstatela.edu:8080/cs3220stu54/RequestSummary?name=Mohit%20Sharma&email=msharma2@calstatela.edu&interests=Hiking&interests=Programming&interests=Reading&interests=Traveling&availability=Saturday&availability=Sunday" target="_blank">GET</a></li>
+                            <li><a onclick="document.getElementById('form-post-params').submit();">POST</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+        
+        <!-- Footer Section -->
+        <footer class="footer footersection">
+            <div class="container">
+                <p>Created by: Mohit Sharma (CIN: 303211238).</p>
+                <p>Write @ <a href="mailto:msharma2@calstatela.edu">msharma2@calstatela.edu</a>.</p>
+            </div>
+        </footer>
+    </body>
+</html>

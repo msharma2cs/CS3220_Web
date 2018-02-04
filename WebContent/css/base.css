@@ -1,0 +1,50 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.jumbotron{
+    padding: 2rem 4rem;
+    background-color: #3E3938;
+    color: aliceblue;
+}
+
+small {
+    font-size: 40%;
+    padding-left: 1rem;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    padding-top: 5px;
+    background-color: #3E3938;
+    color: azure;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.container-main {
+    padding-bottom: 20px;
+}
+
+.interest-header {
+    font-size: 20px;
+}
+
+.interest-list {
+    padding-top: 10px;
+    border: 3px solid black;
+}
+
+img {
+    padding: 10px;
+}
